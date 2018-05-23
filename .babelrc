@@ -1,0 +1,24 @@
+{
+  "presets": ["react-app"],
+  "plugins": [
+    "react-hot-loader/babel",
+    "react-flow-props-to-prop-types",
+    [
+      "babel-plugin-styled-components",
+      {
+        "displayName": true
+      }
+    ],
+  ["ramda", {
+      "useES": false
+    }]
+    ],
+  "env": {
+    "production": {
+      "plugins": ["transform-react-constant-elements"]
+    },
+    "development": {
+      "plugins": []
+    }
+  }
+}
